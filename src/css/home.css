@@ -1,0 +1,182 @@
+main{
+    display: flex;
+    margin: 25px;
+    justify-content: space-between;
+
+}
+.imgs {
+    background-color: #49A8B7;
+    width: 20%;
+    max-height: 1000px;
+    overflow: scroll;
+    text-align: center;
+    margin: 5px;
+}
+
+.imgs img{
+    width: 95%;
+    margin: 5px;
+}
+
+.camera{
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    background-color: #F4F4F8;
+    margin: 5px;
+}
+
+.camera video{
+    max-width: 100%;
+    height: auto;
+}
+.camera img {
+    max-width: 100%;
+    height: auto; 
+} 
+
+.edits{
+    overflow: hidden;
+    position: relative;
+
+}
+.edits [type=radio]{
+    cursor: pointer;
+}
+
+.edits img{
+    width: 50px;
+}
+.edits [type=radio]:checked + img{
+    border: 1px solid red;
+}
+
+.upload{
+    width: 100%;
+}
+.upload input[type=file]{
+    cursor: pointer;
+
+}
+/* for preview image */
+
+.stream{
+    display: inline-block;
+    position:relative;
+    overflow: hidden;
+}
+
+.live{
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #56C7D8;
+  }
+
+.preimg{
+    position:absolute;
+    right: 0%;
+    top: 2.8%;
+    width: 100%;
+    max-width:100%;
+}
+/**/
+
+/* make video and img mirrored*/
+.mirrored{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+}
+
+.stream button{
+    max-width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #56C7D8;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.stream button:hover{
+    background-color: #66EAFF;
+}
+
+/*disable button*/
+.unclick{
+    pointer-events: none; 
+}
+
+.oldimg {
+    margin-bottom: 0;
+    border: 5px solid #009FB7;
+    background-color: #49A8B7;
+}
+.oldimg [type=submit]{
+    cursor: pointer;
+    width: 95%;
+    height: auto;
+    background-color: #fe4a49;
+}
+
+.oldimg [type=submit]:hover{
+    background-color: #FF7070;
+}
+
+@media screen and (max-width: 500px) {
+    .imgs {
+        width: 30%;
+    }
+    .camera{
+        width: 70%;
+    }
+    .edits h2, h3{
+        font-size:5vw;
+    }
+    .preimg{
+        top: 5.3%;
+    }
+    .down{
+        font-size:2vw;
+    }    
+
+}
+
+@media screen and (max-width: 600px) {
+    .preimg{
+        top: 4%;
+    }
+    .down{
+        font-size:2vw;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .preimg{
+        top: 6%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .preimg{
+        top: 5.7%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .preimg{
+        top: 6.7%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .preimg{
+        top: 7.5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .preimg{
+        top: 6.5%;
+    }
+}
+

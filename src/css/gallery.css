@@ -1,0 +1,99 @@
+main{
+    text-align: center;
+
+}
+
+.comments {
+    font-size: 72.5%;
+    margin: 0 auto;
+    width: 650px;
+}
+
+.com {
+    padding: 10px;
+    margin: 2px;
+    background-color: #cccccc;
+    overflow: auto;
+}
+
+.like > *{
+    margin: 5px;
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+}
+
+.likenum {
+    padding: 5px;
+}
+
+.like input[type=submit]{
+      width: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+}
+.like input[type=submit]:hover{
+    background-color: #f0ffff; 
+}
+
+.comment{
+      margin: 10px;
+}
+.comment input[type=text]{
+      width: 650px;
+      height: 50px;
+      border: 1px solid black;
+
+}
+.comment input[type=submit]{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: #56C7D8;
+}
+.comment input[type=submit]:hover{
+    background-color: #66EAFF; 
+}
+
+/*shre buttons*/
+.share img{
+    width: 25px;
+    height: 25px;
+}
+
+.share img:hover{
+    border: 2px solid #56C7D8;
+}
+.share p{
+    margin: 0;
+    padding: 0;
+}
+
+/**/
+@media screen and (max-width: 650px) {
+    .photo img{
+        width: 100%;
+        height: auto;
+    }
+    main h1{
+        font-size:10vw;
+    }
+    .likenum{
+        font-size:3vw;
+    }
+    .comments {
+        width: 100%;
+    }
+    .comment input[type=text]{
+        width: 100%;
+  
+  }
+   .comment input[type=submit]{
+      width: 100%;
+      height: 40px;
+  }
+  
+}
