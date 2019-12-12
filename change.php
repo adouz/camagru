@@ -86,7 +86,7 @@ if (isset($_POST['submit'])){
         $qr->execute([ $newmail ]);
         $count = $qr->fetchColumn();
             if ($count) {
-          header('Location: account.php?mail=exists');
+          header('Location: error.php?mail=exists');
          exit();
         }
     }else {

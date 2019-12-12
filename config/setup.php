@@ -54,4 +54,5 @@
       );";
     $q = $db->prepare($password_reset);
     $q->execute();
+
 ?>
